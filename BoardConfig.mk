@@ -24,6 +24,7 @@ TARGET_CPU_VARIANT := generic
 TARGET_CPU_SMP := true
 
 # Boot image
+TARGET_RECOVERY_FSTAB := $(DEVICE_TREE)/recovery/root/fstab.universal5433
 TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/kernel
 BOARD_KERNEL_CMDLINE := # Exynos doesn't take cmdline arguments from boot image
 BOARD_KERNEL_BASE := 0x10000000
@@ -31,7 +32,6 @@ BOARD_KERNEL_PAGESIZE := 2048
 # 000RU = recovery kernel, 000KU = system kernel
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board SYSMAGIC000RU
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_TREE)/mkbootimg.mk
-TARGET_RECOVERY_FSTAB := $(DEVICE_TREE)/recovery/fstab.universal5433
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 0x105C0000
