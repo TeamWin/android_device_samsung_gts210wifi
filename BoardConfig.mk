@@ -28,7 +28,6 @@ TARGET_KERNEL_SOURCE := kernel/samsung/gts2
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_CONFIG := cm_exynos5433-gts210wifi_defconfig
-#TARGET_KERNEL_VARIANT_CONFIG := cm_exynos5433-gts210wifi_defconfig
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 
 # Boot image
