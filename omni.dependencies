@@ -1,6 +1,6 @@
 [
         {
-		"repository":"ripee/android_kernel_samsung_gts2",
+		"repository":"LineageOS/android_kernel_samsung_gts2",
 		"target_path":"kernel/samsung/gts2",
 		"remote":"github",
 		"revision":"cm-14.1"
