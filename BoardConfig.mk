@@ -65,8 +65,3 @@ RECOVERY_TOUCHSCREEN_FLIP_Y := true
 
 # Encryption support
 TW_INCLUDE_CRYPTO := true
-
-# Init properties from bootloader version, ex. model info
-TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_gts210wifi
-TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_TREE)/init/init_gts210wifi.cpp
