@@ -24,11 +24,11 @@ TARGET_CPU_VARIANT := generic
 TARGET_CPU_SMP := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/universal5433
+TARGET_KERNEL_SOURCE := kernel/samsung/gts2
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_CONFIG := twrp_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := device_gts210wifi_xx
+TARGET_KERNEL_VARIANT_CONFIG := cm_exynos5433-gts210wifi_defconfig
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 
 # Boot image
