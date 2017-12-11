@@ -24,6 +24,7 @@ TARGET_CPU_VARIANT := generic
 TARGET_CPU_SMP := true
 
 # Kernel
+TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 TARGET_KERNEL_SOURCE := kernel/samsung/gts2
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
