@@ -23,14 +23,20 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_SMP := true
 
+# Kernel
+TARGET_KERNEL_SOURCE := kernel/samsung/gts2
+TARGET_KERNEL_ARCH := arm
+TARGET_KERNEL_HEADER_ARCH := arm
+TARGET_KERNEL_CONFIG := cm_exynos5433-gts210wifi_defconfig
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
+
 # Boot image
-TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/kernel
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_TREE)/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := # Exynos doesn't take cmdline arguments from boot image
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 # 000RU = recovery kernel, 000KU = system kernel
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board SYSMAGIC000RU --dt $(DEVICE_TREE)/dt.img
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board SYSMAGIC000RU
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 0x105C0000
