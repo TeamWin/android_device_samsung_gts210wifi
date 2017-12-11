@@ -1,4 +1,4 @@
-DEVICE_TREE := device/samsung/gts210ltexx
+DEVICE_TREE := device/samsung/gts210wifi
 
 CM_PLATFORM_SDK_VERSION := 7	# Required for libf2fs.so
 override TARGET_OUT_VENDOR_SHARED_LIBRARIES = $(TARGET_OUT_SHARED_LIBRARIES)
