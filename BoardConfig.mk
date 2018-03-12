@@ -50,7 +50,7 @@ TW_THEME := landscape_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/15400000.usb/15400000.dwc3/gadget/lun%d/file"
-TW_BRIGHTNESS_PATH := "/sys/devices/13800000.decon_fb/backlight/panel/brightness"
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 162
 TW_NO_REBOOT_BOOTLOADER := true
@@ -58,6 +58,7 @@ TW_HAS_DOWNLOAD_MODE := true
 TW_NO_EXFAT_FUSE := true
 TW_MTP_DEVICE := "/dev/mtp_usb"
 TW_EXCLUDE_SUPERSU := true
+TW_USE_TOOLBOX := true
 
 # Touchscreen correction
 RECOVERY_TOUCHSCREEN_SWAP_XY := true
