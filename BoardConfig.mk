@@ -58,7 +58,6 @@ TW_HAS_DOWNLOAD_MODE := true
 TW_NO_EXFAT_FUSE := true
 TW_MTP_DEVICE := "/dev/mtp_usb"
 TW_EXCLUDE_SUPERSU := true
-TW_USE_TOOLBOX := true
 
 # Touchscreen correction
 RECOVERY_TOUCHSCREEN_SWAP_XY := true
